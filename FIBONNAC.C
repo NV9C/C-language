@@ -5,14 +5,15 @@ void main()
 {
 int a,b,c,i;
 clrscr();
-printf("enter value of a and b");
-scanf("%d%d",&a,&b);
+printf("enter number of terms");
+scanf("%d",&n)
+ printf("fibonaci series are:");
 for (i=0;i<=5;i++)
 {
+ printf("%d",a);
+c=a+b;
 a=b;
 b=c;
-c=a+b;
-printf("%d",c);
 }
 getch();
 }
