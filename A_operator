@@ -1,0 +1,20 @@
+#include <math.h>
+#include <stdio.h>
+// Complete the solve function below.
+void solve(double mealCost, int tipPercent, int taxPercent)
+ {
+float tip,tax,totalCost;
+    scanf("%lf",&mealCost);
+    scanf("%d",&tipPercent);
+    scanf("%d",&taxPercent);
+    tip=mealCost*tipPercent/100;
+    tax=mealCost*taxPercent/100;
+    totalCost=mealCost+tip+tax;
+    printf("%.0f", round(totalCost));
+}
+int main()
+{
+solve(12.00,20,8);
+return 0;
+    
+}
